@@ -14,7 +14,7 @@ namespace QrCodeWebApi
     {
         public static void Register(HttpConfiguration config)
         {
-            config.EnableCors(new EnableCorsAttribute("http://localhost:4200", "*", "*"));
+            config.EnableCors(new EnableCorsAttribute("http://localhost:4200,http://localhost,https://localhost", "*", "*"));
 
             // Web API configuration and services
             var formatter = GlobalConfiguration.Configuration.Formatters.JsonFormatter;
